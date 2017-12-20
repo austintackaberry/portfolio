@@ -6,21 +6,21 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.navbar {
+/*.navbar {
   background-color: #00071a;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-}
+}*/
 
 h1 {
-  font-size: 96px;
+  font-size: 4em;
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 1.5em;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1em;
 }
 
 #content {
