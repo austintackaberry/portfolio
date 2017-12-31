@@ -11,6 +11,8 @@ window.onload = function() {
   let stockitVideoFn = function() {
     stockitVideo.parentElement.style.height = stockitVideo.offsetHeight + stockitVideo.marginTop + 'px';
     stockitVideo.style.marginTop = stockitVideo.offsetHeight * -35.5 / 400 + 'px';
+    console.log(stockitVideo.videoHeight);
+    console.log(stockitVideo.videoWidth);
   };
   let jobsortVideoFn = function() {
     jobsortVideo.parentElement.style.height = jobsortVideo.offsetHeight + jobsortVideo.marginTop + 'px';
