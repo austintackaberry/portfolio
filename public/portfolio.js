@@ -4,19 +4,18 @@ window.onload = function() {
   var stockitVideo = document.getElementById("stockit");
   var jobsortVideo = document.getElementById("jobsort");
   let yeggleVideoFn = function() {
-    yeggleVideo.parentElement.style.height = yeggleVideo.offsetHeight + yeggleVideo.marginTop + 'px';
-    yeggleVideo.style.marginTop = yeggleVideo.offsetHeight * -35.5 / 400 + 'px';
-    console.log('hey');
+    let diff = yeggleVideo.parentElement.offsetHeight - yeggleVideo.offsetHeight;
+    console.log(diff);
+    yeggleVideo.style.marginTop = yeggleVideo.offsetHeight * -37 / 400 + 'px';
+    yeggleVideo.parentElement.style.height = yeggleVideo.offsetHeight + parseFloat(yeggleVideo.style.marginTop.replace('px','')) + 'px';
   };
   let stockitVideoFn = function() {
-    stockitVideo.parentElement.style.height = stockitVideo.offsetHeight + stockitVideo.marginTop + 'px';
-    stockitVideo.style.marginTop = stockitVideo.offsetHeight * -35.5 / 400 + 'px';
-    console.log(stockitVideo.videoHeight);
-    console.log(stockitVideo.videoWidth);
+    stockitVideo.style.marginTop = stockitVideo.offsetHeight * -37 / 400 + 'px';
+    stockitVideo.parentElement.style.height = stockitVideo.offsetHeight + parseFloat(stockitVideo.style.marginTop.replace('px','')) + 'px';
   };
   let jobsortVideoFn = function() {
-    jobsortVideo.parentElement.style.height = jobsortVideo.offsetHeight + jobsortVideo.marginTop + 'px';
-    jobsortVideo.style.marginTop = jobsortVideo.offsetHeight * -35.5 / 400 + 'px';
+    jobsortVideo.style.marginTop = jobsortVideo.offsetHeight * -37 / 400 + 'px';
+    jobsortVideo.parentElement.style.height = jobsortVideo.offsetHeight + parseFloat(jobsortVideo.style.marginTop.replace('px','')) + 'px';
   };
 
   yeggleVideo.onloadeddata = yeggleVideoFn();

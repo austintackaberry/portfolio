@@ -4,6 +4,8 @@ body {
   color: white;
   margin: 0 auto;
   font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  text-align: left;
 }
 
 /*.navbar {
@@ -17,19 +19,25 @@ h1 {
 
 h3 {
   font-weight: bold;
+  display: inline-block;
 }
 
-p {
-  font-size: 1em;
+span {
+  font-weight: bold;
+}
+
+.description {
+  font-size: 0.7em;
 }
 
 img {
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 .video-container {
   overflow:hidden;
   display:block;
+  border-radius: 7px;
 }
 
 video {
@@ -40,7 +48,6 @@ video {
   margin: 0 auto;
   width: 90%;
   max-width: 1000px;
-  text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
 }
