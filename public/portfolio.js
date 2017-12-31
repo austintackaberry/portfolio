@@ -1,22 +1,26 @@
 
 window.onload = function() {
-
   var yeggleVideo = document.getElementById("yeggle");
-  yeggleVideo.onloadeddata = function() {
+  var stockitVideo = document.getElementById("stockit");
+  var jobsortVideo = document.getElementById("jobsort");
+  let yeggleVideoFn = function() {
     yeggleVideo.parentElement.style.height = yeggleVideo.offsetHeight + yeggleVideo.marginTop + 'px';
     yeggleVideo.style.marginTop = yeggleVideo.offsetHeight * -35.5 / 400 + 'px';
+    console.log('hey');
   };
-
-  var stockitVideo = document.getElementById("stockit");
-  stockitVideo.onloadeddata = function() {
+  let stockitVideoFn = function() {
     stockitVideo.parentElement.style.height = stockitVideo.offsetHeight + stockitVideo.marginTop + 'px';
     stockitVideo.style.marginTop = stockitVideo.offsetHeight * -35.5 / 400 + 'px';
   };
-
-  var jobsortVideo = document.getElementById("jobsort");
-  jobsortVideo.onloadeddata = function() {
+  let jobsortVideoFn = function() {
     jobsortVideo.parentElement.style.height = jobsortVideo.offsetHeight + jobsortVideo.marginTop + 'px';
     jobsortVideo.style.marginTop = jobsortVideo.offsetHeight * -35.5 / 400 + 'px';
   };
 
+  yeggleVideo.onloadeddata = yeggleVideoFn();
+  window.addEventListener('resize', yeggleVideoFn);
+  stockitVideo.onloadeddata = stockitVideoFn();
+  window.addEventListener('resize', stockitVideoFn);
+  jobsortVideo.onloadeddata = jobsortVideoFn();
+  window.addEventListener('resize', jobsortVideoFn);
 }
