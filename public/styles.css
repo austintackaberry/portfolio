@@ -23,20 +23,23 @@ p {
   font-size: 1em;
 }
 
-.video-container {
-  height: 364.5px;
-  overflow:hidden;
-  display:block;
+img {
   border-radius: 5px;
 }
 
+.video-container {
+  overflow:hidden;
+  display:block;
+}
+
 video {
-  margin-top: -35.5px;
+  width: 100%;
 }
 
 #content {
   margin: 0 auto;
-  width: 60%;
+  width: 90%;
+  max-width: 1000px;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
