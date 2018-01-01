@@ -78,9 +78,9 @@
       </script>
       <h2 id="about">About</h2>
       <p>
-        Self-taught full stack software engineer who graduated with a 3.84 GPA from a top-15 chemical engineering school. My journey began May 27, 2017,
-        and I have been passionately programming ever since. I have completed Udacity CS101, Harvard edX CS50,
-        FreeCodeCamp frontend certification, listened to 200 programming podcasts, and attended 40 coding meetups!
+        Self-taught full stack software engineer who graduated with a 3.84 GPA from a top-15 chemical engineering school currently working as a Process Engineer at Chevron. My journey began May 27, 2017,
+        and I have been passionately programming ever since. I have completed Udacity CS101, Harvard edX CS50, and
+        FreeCodeCamp frontend certification. I have also listened to 200 programming podcasts and attended 40 coding meetups!
       </p>
       <h2>Technologies</h2>
       <p>Javascript, React, Node, Express, D3, MySQL, Python, Flask, HTML, CSS</p>
@@ -94,7 +94,7 @@
       <h3>StockIT</h3>
       <span> - User competes against machine learning algorithm in picking stocks</span>
       <p>Javascript, HTML, CSS, React, D3, Python, Flask, Pandas, Scikit Learn</p>
-      <p class="description">After retrieving data of a random stock from Quandl, I used Pandas and Scikit Learn to develop a machine learning model for that particular stock which predicts the stock price 50 days into the future for each day. This model is used to determine if/when the AI should buy/sell. This information is sent to the browser where it is plotted using D3 and React. An event listener waits for the user to buy/sell. Leaderboard keeps track of the multi-game score. Optimized for desktop and mobile.</p>
+      <p class="description">Used Pandas and Scikit Learn to develop a machine learning model for each stock. This model is used to determine if/when the AI should buy/sell. Used D3 and React to plot the data and update the leaderboard. Optimized for desktop and mobile.</p>
       <a href="https://stockitgame.herokuapp.com" target="_blank">
         <div class="video-container">
           <video poster="stockit.png" src="stockit.ogv" id="stockit" class="video" muted autoplay loop> </video>
@@ -103,7 +103,7 @@
       <h3>jobSort()</h3>
       <span> - Aggregates job listings from Hacker News: Who's Hiring, Github, and Stack Overflow</span>
       <p>Javascript, HTML, CSS, React, Node, Express, MySQL</p>
-      <p class="description">A bot checks hacker news every hour for updates to Hacker News: Who's Hiring (an unformatted job posting forum), grabs the data, parses it, and stores it in a MySQL database. The listing locations are converted into coordinates using a geocoding API. The reason this is done separately from the web app is because the geocoding API has a 50 request per second limit. The web app calls github jobs API, and scrapes Stack Overflow jobs. These jobs requests are all done in parallel. Once the data is retrieved, the descriptions are run through my regex algorithm to determine which technologies are in the description, minimizing false positives and negatives. The job listings are sorted by which languages the user knows and how familiar the user is with each of them. Optimized for desktop and mobile.</p>
+      <p class="description">A bot checks hacker news every hour for updates to Hacker News: Who's Hiring (an unformatted job posting forum), grabs the data, parses it, and stores it in a MySQL database. The web app asynchronously calls github jobs API, and scrapes Stack Overflow jobs, and queries the MySQL database for Hacker News data. Each job description is run through my regex algorithm to determine which technologies are in the description. The job listings are sorted by which languages the user knows and how familiar the user is with each of them. Optimized for desktop and mobile.</p>
       <a href="https://jobsortio.herokuapp.com" target="_blank">
         <div class="video-container">
           <video poster="jobsort.png" src="jobsort.ogv" id="jobsort" class="video" muted autoplay loop> </video>
@@ -112,7 +112,7 @@
       <h3>Yeggle</h3>
       <span> - Compares Yelp search results with Google Maps</span>
       <p>Javascript, HTML, CSS, React, Node, Express</p>
-      <p class="description">Calls Yelp and Google APIs to get search result data. If the location is blank, the map area is used. User can filter/sort by various categories. The "Yeggle" button matches up Google results to Yelp results; the Yeggle algorithm utilizes coordinates, title, and address to determine if there is a match. User can click on map icons to get the average review rating. Optimized for desktop and mobile.</p>
+      <p class="description">Calls Yelp and Google APIs to get search result data that can be filtered/sorted by various categories. The "Yeggle" button matches up Google results to Yelp results; the Yeggle algorithm utilizes coordinates, title, and address to determine if there is a match. User can click on map icons to get the average review rating. Optimized for desktop and mobile.</p>
       <a href="https://yeggle.herokuapp.com" target="_blank">
         <div class="video-container">
           <video poster="yeggle.png" src="yeggle.ogv" id="yeggle" class="video" muted autoplay loop> </video>

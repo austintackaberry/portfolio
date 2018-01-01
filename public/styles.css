@@ -17,6 +17,32 @@ h1 {
   font-size: 2.2em;
 }
 
+.icons > a:hover {
+  text-decoration: none;
+  animation: shake 1.0s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: rotate(-4deg);
+  }
+
+  20%, 80% {
+    transform: rotate(8deg);
+  }
+
+  30%, 50%, 70% {
+    transform: rotate(-12deg);
+  }
+
+  40%, 60% {
+    transform: rotate(12deg);
+  }
+}
+
 h3 {
   font-weight: bold;
   display: inline-block;
@@ -89,18 +115,18 @@ rect.day[data-count|="0"] {
     border-radius: 50%;
 }
 
-.fa-reddit {
+.fa-reddit, .fa-reddit:hover {
   color: #FF5700;
 }
 
-.fa-github {
+.fa-github, .fa-github:hover {
   color: white;
 }
 
-.fa-twitter {
+.fa-twitter, .fa-twitter:hover {
   color: #0084B4;
 }
 
-.fa-linkedin {
+.fa-linkedin, .fa-linkedin:hover {
   color: #0077B5;
 }
