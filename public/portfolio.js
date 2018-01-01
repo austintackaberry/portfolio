@@ -5,7 +5,6 @@ window.onload = function() {
   var jobsortVideo = document.getElementById("jobsort");
   let yeggleVideoFn = function() {
     let diff = yeggleVideo.parentElement.offsetHeight - yeggleVideo.offsetHeight;
-    console.log(diff);
     yeggleVideo.style.marginTop = yeggleVideo.offsetHeight * -37 / 400 + 'px';
     yeggleVideo.parentElement.style.height = yeggleVideo.offsetHeight + parseFloat(yeggleVideo.style.marginTop.replace('px','')) + 'px';
   };
@@ -24,4 +23,12 @@ window.onload = function() {
   window.addEventListener('resize', stockitVideoFn);
   jobsortVideo.onloadeddata = jobsortVideoFn();
   window.addEventListener('resize', jobsortVideoFn);
+  window.addEventListener('resize', function() {
+    if (window.innerWidth < 860) {
+      document.getElementById('my-calendar').style.display = "none";
+    }
+    else {
+      document.getElementById('my-calendar').style.display = "block";
+    }
+  });
 }

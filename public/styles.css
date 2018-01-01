@@ -52,6 +52,18 @@ video {
   margin-bottom: 10px;
 }
 
+#my-calendar {
+  margin-top: 20px;
+}
+
+rect.day[data-count|="0"] {
+  fill: rgb(101, 101, 101);
+}
+
+.contrib-number, .text-muted {
+  color: white;
+}
+
 .container {
   width: 25%;
 }
