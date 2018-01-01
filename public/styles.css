@@ -44,6 +44,14 @@ video {
   width: 100%;
 }
 
+.container-fluid {
+  padding-left: 0px;
+}
+
+#logo {
+  border: solid white 1px;
+}
+
 #content {
   margin: 0 auto;
   width: 90%;
