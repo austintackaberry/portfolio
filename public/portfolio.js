@@ -3,6 +3,12 @@ window.onload = function() {
   if (window.innerWidth > 860) {
     document.getElementById('my-calendar').style.display = "block";
   }
+  if (window.innerWidth < 415) {
+    $('.icons').children().removeClass('fa-3x');
+    $('.icons').children().addClass('fa-2x');
+    $('.icons').children().css('width','40px');
+    $('.icons').children().css('margin','5px');
+  }
   var yeggleVideo = document.getElementById("yeggle");
   var stockitVideo = document.getElementById("stockit");
   var jobsortVideo = document.getElementById("jobsort");

@@ -54,7 +54,7 @@ body {
 
 .item {
   border: solid 2px white;
-  margin-top: 2vmin;
+  margin-top: calc(8px + 2vmin);
   padding: 2vmin;
   border-radius: 2vmin;
 }
@@ -71,6 +71,10 @@ body {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+
+.icons {
+  text-align: center;
 }
 
 @keyframes shake {
