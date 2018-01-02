@@ -76,10 +76,10 @@ h3 {
 }
 
 h1 {
-  font-size: calc(15.3px + 1.9vmin);
+  font-size: calc(15px + 1.9vmin);
 }
 h2 {
-  font-size: calc(15px + 1.5vmin);
+  font-size: calc(14.5px + 1.5vmin);
 }
 h3 {
   font-size: calc(14px + 1.2vmin);
