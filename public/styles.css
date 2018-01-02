@@ -44,6 +44,27 @@ body {
   float: left;
 }
 
+#my-calendar {
+  margin-top: 20px;
+  width: 100%;
+  display: none;
+  border: solid 2px white;
+  border-radius: 2vmin;
+}
+
+.item {
+  border: solid 2px white;
+  margin-top: 2vmin;
+  padding: 2vmin;
+  border-radius: 2vmin;
+}
+
+.subitem {
+  border-top: solid 1px white;
+  padding-bottom: 4.5vmin;
+  padding-top: 2.5vmin;
+}
+
 .icons > a:hover {
   text-decoration: none;
   animation: shake 1.0s cubic-bezier(.36,.07,.19,.97) both;
@@ -126,12 +147,6 @@ video {
   max-width: 1000px;
   margin-top: 20px;
   margin-bottom: 10px;
-}
-
-#my-calendar {
-  margin-top: 20px;
-  width: 100%;
-  display: none;
 }
 
 rect.day[data-count|="0"] {

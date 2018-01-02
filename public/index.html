@@ -58,54 +58,70 @@
       <link rel="stylesheet" href="styles.css">
 
       <!-- Prepare a container for your calendar. -->
-      <div class="calendar" id="my-calendar">
+      <div class="calendar item" id="my-calendar">
           <!-- Loading stuff -->
       </div>
 
       <script>
           GitHubCalendar(".calendar", "austintackaberry");
       </script>
-      <h2 id="about">About</h2>
-      <p>
-        Self-taught full stack software engineer who graduated with a 3.84 GPA from a top-15 chemical engineering school currently working as a Process Engineer at Chevron. I have completed Udacity CS101, Harvard edX CS50, and
-        FreeCodeCamp frontend certification. I have also listened to 200 programming podcasts and attended 40 coding meetups!
-      </p>
-      <h2>Technologies</h2>
-      <p>Javascript, React, Node, Express, D3, MySQL, Python, Flask, HTML, CSS</p>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/austintackaberry/" class="fa fa-linkedin fa-3x"></a>
-        <a href="https://twitter.com/AETackaberry" class="fa fa-twitter fa-3x"></a>
-        <a href="https://github.com/austintackaberry/" class="fa fa-github fa-3x"></a>
-        <a href="https://www.reddit.com/user/austintackaberry/" class="fa fa-reddit fa-3x"></a>
+      <div class="item">
+        <h2 id="about">About</h2>
+        <div class="subitem" style="padding-bottom: 0px;">
+          <p>
+            Self-taught full stack software engineer who graduated with a 3.84 GPA from a top-15 chemical engineering school currently working as a Process Engineer at Chevron. I have completed Udacity CS101, Harvard edX CS50, and
+            FreeCodeCamp frontend certification. I have also listened to 200 programming podcasts and attended 40 coding meetups!
+          </p>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/austintackaberry/" class="fa fa-linkedin fa-3x"></a>
+            <a href="https://twitter.com/AETackaberry" class="fa fa-twitter fa-3x"></a>
+            <a href="https://github.com/austintackaberry/" class="fa fa-github fa-3x"></a>
+            <a href="https://www.reddit.com/user/austintackaberry/" class="fa fa-reddit fa-3x"></a>
+          </div>
+        </div>
       </div>
-      <h2 id="my-work" class="main-class">My Work</h2>
-      <h3>StockIT</h3>
-      <p class="small-description"> - User competes against machine learning algorithm in picking stocks</p>
-      <p>Javascript, HTML, CSS, React, D3, Python, Flask, Pandas, Scikit Learn</p>
-      <p class="description">Used Pandas and Scikit Learn to develop a machine learning model for each stock. This model is used to determine if/when the AI should buy/sell. Used D3 and React to plot the data and update the leaderboard. Optimized for desktop and mobile.</p>
-      <a href="https://stockitgame.herokuapp.com" target="_blank">
-        <div class="video-container">
-          <video poster="stockit.png" src="stockit.ogv" id="stockit" class="video" muted autoplay loop> </video>
+      <div class="item">
+        <h2>Technologies</h2>
+        <div class="subitem" style="padding-bottom: 0px;">
+          <p>Javascript, React, Node, Express, D3, MySQL, Python, Flask, HTML, CSS</p>
         </div>
-      </a>
-      <h3>jobSort()</h3>
-      <p class="small-description"> - Aggregates job listings from Hacker News: Who's Hiring, Github, and Stack Overflow</p>
-      <p>Javascript, HTML, CSS, React, Node, Express, MySQL</p>
-      <p class="description">A bot checks hacker news every hour for updates to Hacker News: Who's Hiring (an unformatted job posting forum), grabs the data, parses it, and stores it in a MySQL database. The web app asynchronously calls github jobs API, and scrapes Stack Overflow jobs, and queries the MySQL database for Hacker News data. Each job description is run through my regex algorithm to determine which technologies are in the description. The job listings are sorted by which languages the user knows and how familiar the user is with each of them. Optimized for desktop and mobile.</p>
-      <a href="https://jobsortio.herokuapp.com" target="_blank">
-        <div class="video-container">
-          <video poster="jobsort.png" src="jobsort.ogv" id="jobsort" class="video" muted autoplay loop> </video>
+      </div>
+      <div class="item">
+        <h2 id="my-work">My Work</h2>
+        <div class="subitem">
+          <h3>StockIT</h3>
+          <p class="small-description"> - Machine learning stock-picking game</p>
+          <p>Javascript, HTML, CSS, React, D3, Python, Flask, Pandas, Scikit Learn</p>
+          <p class="description">Used Pandas and Scikit Learn to develop a machine learning model for each stock. This model is used to determine if/when the AI should buy/sell. Used D3 and React to plot the data and update the leaderboard. Optimized for desktop and mobile.</p>
+          <a href="https://stockitgame.herokuapp.com" target="_blank">
+            <div class="video-container">
+              <video poster="stockit.png" src="stockit.ogv" id="stockit" class="video" muted autoplay loop> </video>
+            </div>
+          </a>
         </div>
-      </a>
-      <h3>Yeggle</h3>
-      <p class="small-description"> - Compares Yelp search results with Google Maps</p>
-      <p>Javascript, HTML, CSS, React, Node, Express</p>
-      <p class="description">Calls Yelp and Google APIs to get search result data that can be filtered/sorted by various categories. The "Yeggle" button matches up Google results to Yelp results; the Yeggle algorithm utilizes coordinates, title, and address to determine if there is a match. User can click on map icons to get the average review rating. Optimized for desktop and mobile.</p>
-      <a href="https://yeggle.herokuapp.com" target="_blank">
-        <div class="video-container">
-          <video poster="yeggle.png" src="yeggle.ogv" id="yeggle" class="video" muted autoplay loop> </video>
+        <div class="subitem">
+          <h3>jobSort()</h3>
+          <p class="small-description"> - Aggregates job listings from Hacker News: Who's Hiring, Github, and Stack Overflow</p>
+          <p>Javascript, HTML, CSS, React, Node, Express, MySQL</p>
+          <p class="description">A bot checks hacker news every hour for updates to Hacker News: Who's Hiring (an unformatted job posting forum), grabs the data, parses it, and stores it in a MySQL database. The web app asynchronously calls github jobs API, and scrapes Stack Overflow jobs, and queries the MySQL database for Hacker News data. Each job description is run through my regex algorithm to determine which technologies are in the description. The job listings are sorted by which languages the user knows and how familiar the user is with each of them. Optimized for desktop and mobile.</p>
+          <a href="https://jobsortio.herokuapp.com" target="_blank">
+            <div class="video-container">
+              <video poster="jobsort.png" src="jobsort.ogv" id="jobsort" class="video" muted autoplay loop> </video>
+            </div>
+          </a>
         </div>
-      </a>
+        <div class="subitem" style="padding-bottom: 0px;">
+          <h3>Yeggle</h3>
+          <p class="small-description"> - Compares Yelp search results with Google Maps</p>
+          <p>Javascript, HTML, CSS, React, Node, Express</p>
+          <p class="description">Calls Yelp and Google APIs to get search result data that can be filtered/sorted by various categories. The "Yeggle" button matches up Google results to Yelp results; the Yeggle algorithm utilizes coordinates, title, and address to determine if there is a match. User can click on map icons to get the average review rating. Optimized for desktop and mobile.</p>
+          <a href="https://yeggle.herokuapp.com" target="_blank">
+            <div class="video-container">
+              <video poster="yeggle.png" src="yeggle.ogv" id="yeggle" class="video" muted autoplay loop> </video>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
