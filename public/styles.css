@@ -16,14 +16,14 @@ body {
   margin: 0 auto;
   text-align: center;
   display: block;
-  width: calc(220px + 46vmin);
+  width: calc(221px + 39vmin);
   height: calc(24px + 12vmin);
 }
 
 .banner-text {
   display: inline-block;
   text-align: left;
-  margin: calc(1px + 2vmin);
+  margin: calc(1px + 2.2vmin);
   float: left;
 }
 
