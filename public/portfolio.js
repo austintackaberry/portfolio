@@ -1,5 +1,11 @@
 
 window.onload = function() {
+  if (window.innerWidth < 860) {
+    document.getElementById('my-calendar').style.display = "none";
+  }
+  else {
+    document.getElementById('my-calendar').style.display = "block";
+  }
   var yeggleVideo = document.getElementById("yeggle");
   var stockitVideo = document.getElementById("stockit");
   var jobsortVideo = document.getElementById("jobsort");
