@@ -29,6 +29,7 @@ body {
 
 .banner-text > h1 {
   margin-top: 0px;
+  margin-bottom: 2vmin;
 }
 
 
@@ -39,7 +40,7 @@ body {
 
 .photo-container {
   display: inline-block;
-  margin: 2vh;
+  margin: 2vmin;
   float: left;
 }
 
