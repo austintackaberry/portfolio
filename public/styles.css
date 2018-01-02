@@ -16,20 +16,20 @@ body {
   margin: 0 auto;
   text-align: center;
   display: block;
-  width: calc(200px + 50vmin);
+  width: calc(220px + 46vmin);
   height: calc(24px + 12vmin);
 }
 
 .banner-text {
   display: inline-block;
   text-align: left;
-  margin: 2vmin;
+  margin: calc(1px + 2vmin);
   float: left;
 }
 
 .banner-text > h1 {
   margin-top: 0px;
-  margin-bottom: 2vmin;
+  margin-bottom: calc(2px + 0.9vmin);
 }
 
 
@@ -76,10 +76,10 @@ h3 {
 }
 
 h1 {
-  font-size: calc(17px + 1.6vmin);
+  font-size: calc(15.5px + 2vmin);
 }
 h2 {
-  font-size: calc(16px + 1.4vmin);
+  font-size: calc(15px + 1.5vmin);
 }
 h3 {
   font-size: calc(14px + 1.2vmin);
