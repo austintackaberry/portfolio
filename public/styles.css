@@ -23,7 +23,7 @@ body {
 .banner-text {
   display: inline-block;
   text-align: left;
-  margin: calc(1px + 2.2vmin);
+  margin: calc(1.5px + 2.5vmin) calc(1px + 1vmin) calc(1.5px + 2.5vmin) calc(1px + 1vmin);
   float: left;
 }
 
