@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lan="en">
   <head>
+    <link rel="stylesheet" href="reset.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -17,7 +18,6 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
@@ -32,30 +32,18 @@
     <script src="portfolio.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#"><img id="logo" src=android-chrome-48x48.png></a>
+    <div id="banner">
+      <div class="banner-container">
+        <div class="photo-container">
+          <img id="photo" align="top" src="pic-square.jpg" alt="Professional Picture">
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#my-work">My Work</a></li>
-          </ul>
+        <div class="banner-text">
+          <h2>Austin Tackaberry</h2>
+          <h2>Full Stack Software Engineer</h2>
         </div>
       </div>
-    </nav>
+    </div>
     <div id="content">
-      <h1>Austin Tackaberry - Full Stack Software Engineer</h1>
-      <div class="container main-class">
-        <img src="pic.jpg" alt="Professional Picture">
-      </div>
       <!-- Include the library. -->
       <script
         src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"

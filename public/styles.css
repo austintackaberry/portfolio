@@ -2,19 +2,45 @@ body {
   background-color: #00071a;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   color: white;
-  margin: 0 auto;
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
   text-align: left;
 }
 
-/*.navbar {
-  background-color: #00071a;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-}*/
+#banner {
+  background: black;
+  height: 120px;
+}
 
-h1 {
-  font-size: 2.2em;
+.banner-container {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 550px;
+  height: 120px;
+}
+
+.banner-text {
+  display: inline-block;
+  text-align: left;
+  margin: 20px;
+  float: left;
+}
+
+.banner-text > h2 {
+  margin-top: 0px;
+}
+
+
+#photo {
+  border-radius: 10px;
+  width: 80px;
+}
+
+.photo-container {
+  display: inline-block;
+  margin: 20px;
+  float: left;
 }
 
 .icons > a:hover {
@@ -56,8 +82,9 @@ span {
   font-size: 0.7em;
 }
 
-img {
-  border-radius: 7px;
+#logo {
+  border: solid 1px white;
+  border-radius: 10px;
 }
 
 .video-container {
