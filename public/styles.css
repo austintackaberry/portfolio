@@ -9,37 +9,37 @@ body {
 
 #banner {
   background: black;
-  height: 12vh;
+  height: 15vmin;
 }
 
 .banner-container {
   margin: 0 auto;
   text-align: center;
   display: block;
-  width: 58vh;
-  height: 12vh;
+  width: 73vmin;
+  height: 15vmin;
 }
 
 .banner-text {
   display: inline-block;
   text-align: left;
-  margin: 1.5vh;
+  margin: 2vmin;
   float: left;
 }
 
-.banner-text > h2 {
+.banner-text > h1 {
   margin-top: 0px;
 }
 
 
 #photo {
   border-radius: 10px;
-  width: 9.0vh;
+  width: 10.5vmin;
 }
 
 .photo-container {
   display: inline-block;
-  margin: 1.5vh;
+  margin: 2vh;
   float: left;
 }
 
@@ -79,13 +79,13 @@ span {
 }
 
 h1 {
-  font-size: 5.9vmin;
+  font-size: 4vmin;
 }
 h2 {
   font-size: 3.3vmin;
 }
 h3 {
-  font-size: 2.0vmin;
+  font-size: 3.0vmin;
 }
 p, span {
   font-size: 2.5vmin;
