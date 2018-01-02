@@ -1,9 +1,6 @@
 
 window.onload = function() {
-  if (window.innerWidth < 860) {
-    document.getElementById('my-calendar').style.display = "none";
-  }
-  else {
+  if (window.innerWidth > 860) {
     document.getElementById('my-calendar').style.display = "block";
   }
   var yeggleVideo = document.getElementById("yeggle");

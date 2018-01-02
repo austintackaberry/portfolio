@@ -125,6 +125,7 @@ video {
 #my-calendar {
   margin-top: 20px;
   width: 100%;
+  display: none;
 }
 
 rect.day[data-count|="0"] {
