@@ -12,6 +12,7 @@ window.onload = function() {
   var yeggleVideo = document.getElementById("yeggle");
   var stockitVideo = document.getElementById("stockit");
   var jobsortVideo = document.getElementById("jobsort");
+  var codeclubVideo = document.getElementById("codeclub");
   let yeggleVideoFn = function() {
     let diff = yeggleVideo.parentElement.offsetHeight - yeggleVideo.offsetHeight;
     yeggleVideo.style.marginTop = yeggleVideo.offsetHeight * -37 / 400 + 'px';
@@ -25,9 +26,15 @@ window.onload = function() {
     jobsortVideo.style.marginTop = jobsortVideo.offsetHeight * -37 / 400 + 'px';
     jobsortVideo.parentElement.style.height = jobsortVideo.offsetHeight + parseFloat(jobsortVideo.style.marginTop.replace('px','')) + 'px';
   };
+  let codeclubVideoFn = function() {
+    codeclubVideo.style.marginTop = codeclubVideo.offsetHeight * -37 / 400 + 'px';
+    codeclubVideo.parentElement.style.height = codeclubVideo.offsetHeight + parseFloat(codeclubVideo.style.marginTop.replace('px','')) + 'px';
+  };
 
   yeggleVideo.onloadeddata = yeggleVideoFn();
   window.addEventListener('resize', yeggleVideoFn);
+  codeclubVideo.onloadeddata = codeclubVideoFn();
+  window.addEventListener('resize', codeclubVideoFn);
   stockitVideo.onloadeddata = stockitVideoFn();
   window.addEventListener('resize', stockitVideoFn);
   jobsortVideo.onloadeddata = jobsortVideoFn();
