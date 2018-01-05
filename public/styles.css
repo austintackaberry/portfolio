@@ -7,7 +7,7 @@ body {
   text-align: left;
 }
 
-#banner {
+.banner {
   background: black;
   height: calc(24px + 12vmin);
 }
@@ -33,7 +33,7 @@ body {
 }
 
 
-#photo {
+.profile-pic {
   border-radius: 10px;
   width: calc(20px + 8vmin);
 }
@@ -44,7 +44,7 @@ body {
   float: left;
 }
 
-#my-calendar {
+.calendar {
   margin-top: 20px;
   width: 100%;
   display: none;
@@ -141,11 +141,7 @@ video {
   padding-left: 0px;
 }
 
-#logo {
-  border: solid white 1px;
-}
-
-#content {
+.content {
   margin: 0 auto;
   width: 90%;
   max-width: 1000px;

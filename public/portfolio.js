@@ -1,18 +1,34 @@
 
 window.onload = function() {
+
+  // Hide github calendar for small screen sizes on load
   if (window.innerWidth > 860) {
     document.getElementById('my-calendar').style.display = "block";
   }
+
+  // Hide github calendar for small screen sizes on resize
+  window.addEventListener('resize', function() {
+    if (window.innerWidth < 860) {
+      document.getElementById('my-calendar').style.display = "none";
+    }
+    else {
+      document.getElementById('my-calendar').style.display = "block";
+    }
+  });
+
+  // Use smaller icons for mobile
   if (window.innerWidth < 415) {
     $('.icons').children().removeClass('fa-3x');
     $('.icons').children().addClass('fa-2x');
     $('.icons').children().css('width','40px');
     $('.icons').children().css('margin','5px');
   }
-  var yeggleVideo = document.getElementById("yeggle");
-  var stockitVideo = document.getElementById("stockit");
-  var jobsortVideo = document.getElementById("jobsort");
-  var codeclubVideo = document.getElementById("codeclub");
+  let yeggleVideo = document.getElementById("yeggle");
+  let stockitVideo = document.getElementById("stockit");
+  let jobsortVideo = document.getElementById("jobsort");
+  let codeclubVideo = document.getElementById("codeclub");
+
+  // Crop top of videos to only show window.innerHeight as a function of the video height
   let yeggleVideoFn = function() {
     let diff = yeggleVideo.parentElement.offsetHeight - yeggleVideo.offsetHeight;
     yeggleVideo.style.marginTop = yeggleVideo.offsetHeight * -37 / 400 + 'px';
@@ -31,6 +47,7 @@ window.onload = function() {
     codeclubVideo.parentElement.style.height = codeclubVideo.offsetHeight + parseFloat(codeclubVideo.style.marginTop.replace('px','')) + 'px';
   };
 
+  // Execute functions when video data is loaded and on resize
   yeggleVideo.onloadeddata = yeggleVideoFn();
   window.addEventListener('resize', yeggleVideoFn);
   codeclubVideo.onloadeddata = codeclubVideoFn();
@@ -39,12 +56,4 @@ window.onload = function() {
   window.addEventListener('resize', stockitVideoFn);
   jobsortVideo.onloadeddata = jobsortVideoFn();
   window.addEventListener('resize', jobsortVideoFn);
-  window.addEventListener('resize', function() {
-    if (window.innerWidth < 860) {
-      document.getElementById('my-calendar').style.display = "none";
-    }
-    else {
-      document.getElementById('my-calendar').style.display = "block";
-    }
-  });
 }
