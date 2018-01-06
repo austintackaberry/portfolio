@@ -9,22 +9,19 @@ body {
 
 .banner {
   background: black;
-  height: calc(24px + 12vmin);
+  text-align: center;
 }
 
 .banner-container {
   margin: 0 auto;
   text-align: center;
-  display: block;
-  width: calc(221px + 39vmin);
-  height: calc(24px + 12vmin);
+  display: inline-block;
 }
 
 .banner-text {
   display: inline-block;
   text-align: left;
   margin: calc(1.5px + 2.5vmin) calc(1px + 1vmin) calc(1.5px + 2.5vmin) calc(1px + 1vmin);
-  float: left;
 }
 
 .banner-text > h1 {
