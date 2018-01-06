@@ -168,8 +168,8 @@ p {
 }
 
 .fa {
-    width: 56px;
-    margin: 10px;
+    font-size: calc(22px + 3vmin);
+    margin: calc(5px + 0.5vmin) calc(5px + 1.5vmin) calc(5px + 0.5vmin) calc(5px + 1.5vmin);
     text-align: center;
     text-decoration: none;
     border-radius: 50%;

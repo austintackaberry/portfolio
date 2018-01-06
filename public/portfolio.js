@@ -17,12 +17,6 @@ window.onload = function() {
   });
 
   // Use smaller icons for mobile
-  if (window.innerWidth < 415) {
-    $('.icons').children().removeClass('fa-3x');
-    $('.icons').children().addClass('fa-2x');
-    $('.icons').children().css('width','40px');
-    $('.icons').children().css('margin','5px');
-  }
   let yeggleVideo = document.getElementById("yeggle");
   let stockitVideo = document.getElementById("stockit");
   let jobsortVideo = document.getElementById("jobsort");
