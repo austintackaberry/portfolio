@@ -21,14 +21,9 @@ body {
 .banner-text {
   display: inline-block;
   text-align: left;
-  margin: calc(1.5px + 2.5vmin) calc(1px + 1vmin) calc(1.5px + 2.5vmin) calc(1px + 1vmin);
+  margin: calc(1.9px + 2.3vmin) calc(1px + 1vmin) calc(1.5px + 2.5vmin) calc(1px + 1vmin);
+  margin-right: calc(2px + 2vmin);
 }
-
-.banner-text > h1 {
-  margin-top: 0px;
-  margin-bottom: calc(2px + 0.9vmin);
-}
-
 
 .profile-pic {
   border-radius: 10px;
@@ -98,7 +93,7 @@ h3 {
 }
 
 h1 {
-  font-size: calc(13.5px + 1.9vmin);
+  font-size: calc(13px + 5vmin);
 }
 h2 {
   font-size: calc(13px + 1.5vmin);
