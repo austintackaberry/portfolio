@@ -1,6 +1,6 @@
 body {
   background-color: #00071a;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  background-image: url("https://wallpaperscraft.com/image/dark_background_line_surface_65896_1920x1200.jpg");
   color: white;
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
@@ -8,7 +8,6 @@ body {
 }
 
 .banner {
-  background: black;
   text-align: center;
 }
 
@@ -49,6 +48,7 @@ body {
   margin-top: calc(8px + 2vmin);
   padding: 2vmin;
   border-radius: 2vmin;
+  background: rgb(31, 31, 31);
 }
 
 .subitem {
