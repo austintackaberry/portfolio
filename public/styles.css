@@ -185,3 +185,8 @@ p {
 .fa-linkedin, .fa-linkedin:hover {
   color: #0077B5;
 }
+
+li {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
