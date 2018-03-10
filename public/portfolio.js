@@ -24,7 +24,6 @@ window.onload = function() {
 
   // Crop top of videos to only show window.innerHeight as a function of the video height
   let yeggleVideoFn = function() {
-    let diff = yeggleVideo.parentElement.offsetHeight - yeggleVideo.offsetHeight;
     yeggleVideo.style.marginTop = yeggleVideo.offsetHeight * -37 / 400 + 'px';
     yeggleVideo.parentElement.style.height = yeggleVideo.offsetHeight + parseFloat(yeggleVideo.style.marginTop.replace('px','')) + 'px';
   };
@@ -33,8 +32,9 @@ window.onload = function() {
     stockitVideo.parentElement.style.height = stockitVideo.offsetHeight + parseFloat(stockitVideo.style.marginTop.replace('px','')) + 'px';
   };
   let jobsortVideoFn = function() {
-    jobsortVideo.style.marginTop = jobsortVideo.offsetHeight * -37 / 400 + 'px';
-    jobsortVideo.parentElement.style.height = jobsortVideo.offsetHeight + parseFloat(jobsortVideo.style.marginTop.replace('px','')) + 'px';
+    jobsortVideo.style.marginTop = jobsortVideo.offsetHeight * -0.037 + 'px';
+    jobsortVideo.style.marginBottom = jobsortVideo.offsetHeight * -0.037 + 'px';
+    jobsortVideo.parentElement.style.height = jobsortVideo.offsetHeight + 2*parseFloat(jobsortVideo.style.marginTop.replace('px','')) + 'px';
   };
   let codeclubVideoFn = function() {
     codeclubVideo.style.marginTop = codeclubVideo.offsetHeight * -37 / 400 + 'px';
