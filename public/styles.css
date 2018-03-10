@@ -101,7 +101,7 @@ h2 {
 h3 {
   font-size: calc(12.5px + 1.2vmin);
 }
-p {
+p, li {
   font-size: calc(11px + 0.8vmin);
 }
 
