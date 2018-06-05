@@ -1,7 +1,6 @@
 body {
-  background-color: #00071a;
-  background-image: #161616
-    url("https://wallpaperscraft.com/image/dark_background_line_surface_65896_1920x1200.jpg");
+  background-color: #161616;
+  background-image: url("dark_background_line_surface_65896_1920x1200.jpg");
   color: white;
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
