@@ -1,8 +1,9 @@
 body {
   background-color: #00071a;
-  background-image: url("https://wallpaperscraft.com/image/dark_background_line_surface_65896_1920x1200.jpg");
+  background-image: #161616
+    url("https://wallpaperscraft.com/image/dark_background_line_surface_65896_1920x1200.jpg");
   color: white;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   text-align: left;
 }
@@ -20,7 +21,8 @@ body {
 .banner-text {
   display: inline-block;
   text-align: left;
-  margin: calc(1.9px + 2.3vmin) calc(1px + 1vmin) calc(1.5px + 2.5vmin) calc(1px + 1vmin);
+  margin: calc(1.9px + 2.3vmin) calc(1px + 1vmin) calc(1.5px + 2.5vmin)
+    calc(1px + 1vmin);
   margin-right: calc(2px + 2vmin);
 }
 
@@ -61,7 +63,7 @@ body {
 
 .icons > a:hover {
   text-decoration: none;
-  animation: shake 1.0s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
@@ -72,19 +74,24 @@ body {
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: rotate(-4deg);
   }
 
-  20%, 80% {
+  20%,
+  80% {
     transform: rotate(8deg);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: rotate(-12deg);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: rotate(12deg);
   }
 }
@@ -103,7 +110,8 @@ h2 {
 h3 {
   font-size: calc(12.5px + 1.2vmin);
 }
-p, li {
+p,
+li {
   font-size: calc(11px + 0.8vmin);
 }
 
@@ -112,7 +120,9 @@ p, li {
   font-weight: bold;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 1.5vmin;
   margin-bottom: 1.5vmin;
 }
@@ -122,8 +132,8 @@ h1, h2, h3 {
 }
 
 .video-container {
-  overflow:hidden;
-  display:block;
+  overflow: hidden;
+  display: block;
   line-height: 0;
   border-radius: 1%;
   margin: 0 auto;
@@ -149,7 +159,8 @@ rect.day[data-count|="0"] {
   fill: rgb(101, 101, 101);
 }
 
-.contrib-number, .text-muted {
+.contrib-number,
+.text-muted {
   color: white;
 }
 
@@ -161,36 +172,41 @@ p {
   text-align: justify;
 }
 
-.container img{
+.container img {
   max-width: 100%;
   margin-top: 15px;
 }
 
 .fab {
-    font-size: calc(22px + 3vmin);
-    margin: calc(5px + 0.5vmin) calc(5px + 1.5vmin) calc(5px + 0.5vmin) calc(5px + 1.5vmin);
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
+  font-size: calc(22px + 3vmin);
+  margin: calc(5px + 0.5vmin) calc(5px + 1.5vmin) calc(5px + 0.5vmin)
+    calc(5px + 1.5vmin);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
 
-.fa-reddit, .fa-reddit:hover {
-  color: #FF5700;
+.fa-reddit,
+.fa-reddit:hover {
+  color: #ff5700;
 }
 
-.fa-github, .fa-github:hover {
+.fa-github,
+.fa-github:hover {
   color: white;
 }
 
-.fa-twitter, .fa-twitter:hover {
-  color: #0084B4;
+.fa-twitter,
+.fa-twitter:hover {
+  color: #0084b4;
 }
 
-.fa-linkedin, .fa-linkedin:hover {
-  color: #0077B5;
+.fa-linkedin,
+.fa-linkedin:hover {
+  color: #0077b5;
 }
 
 li {
-    list-style-type: disc;
-    margin-left: 2rem;
+  list-style-type: disc;
+  margin-left: 2rem;
 }
