@@ -181,7 +181,7 @@ class IndexPage extends Component {
                 <a href="https://ydkjs-exercises.com">YDKJS Exercises</a>
               </h3>
               <p className="small-description">
-                - Exercises to go along with
+                {` - Exercises to go along with `}
                 <a href="https://github.com/getify/You-Dont-Know-JS">
                   You Don't Know JavaScript
                 </a>
@@ -203,8 +203,8 @@ class IndexPage extends Component {
                 <a href="https://github.com/paypal/downshift">Downshift</a>
               </h3>
               <p className="small-description">
-                - Autocomplete React component that uses render props design
-                pattern
+                {` - Autocomplete React component that uses render props design
+                pattern`}
               </p>
               <p>JavaScript, React, Jest, Storybook, Cypress</p>
               <ul>
@@ -234,7 +234,7 @@ class IndexPage extends Component {
                 </a>
               </h3>
               <p className="small-description">
-                - Discuss/Teach/Learn all things React
+                {` - Discuss/Teach/Learn all things React`}
               </p>
               <p>JavaScript, React</p>
               <ul>
@@ -245,21 +245,32 @@ class IndexPage extends Component {
                 </li>
               </ul>
             </div>
-            <div className="subitem" style={{ paddingBottom: '0px' }}>
-              <h3>
-                <a href="https://github.com/reactjs/redux">Redux</a>
-              </h3>
-              <p className="small-description">
-                - Predictable state container for JavaScript apps
-              </p>
-              <p>JavaScript</p>
-              <ul>
-                <li>Contributed to documentation - when to use Redux</li>
-              </ul>
-            </div>
           </div>
           <div className="item">
             <h2 id="my-work">Projects</h2>
+            <div className="subitem">
+              <h3>
+                <a
+                  href="https://sicc-piccs.netlify.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SICC PICCS
+                </a>
+              </h3>
+              <p className="small-description">
+                {` - Real-time, image-recognition, multiplayer scavenger hunt`}
+              </p>
+              <p>JavaScript, React, GraphQL, Apollo, Postgres</p>
+              <p className="description">
+                {`Create or join a game with friends or strangers. Once the game starts, all players
+                will be prompted to take a picture of something (hot dog, coffee mug, etc.). 
+                The first person to take a picture of that item, wins. Clarifai API was used for 
+                image recognition. Hasura API was used as a real-time, GraphQL server. 
+                This web app was developed with a team of 5 developers.
+                  `}
+              </p>
+            </div>
             <div className="subitem">
               <h3>
                 <a
@@ -271,7 +282,7 @@ class IndexPage extends Component {
                 </a>
               </h3>
               <p className="small-description">
-                - Machine learning stock-picking game
+                {` - Machine learning stock-picking game`}
               </p>
               <p>
                 JavaScript, React, Python, Flask, Pandas, Scikit Learn, D3, CSS,
@@ -312,7 +323,7 @@ class IndexPage extends Component {
                 </a>
               </h3>
               <p className="small-description">
-                - Sorts/Filters job listings from Hacker News: Who is Hiring
+                {` - Sorts/Filters job listings from Hacker News: Who is Hiring`}
               </p>
               <p>
                 JavaScript, React, Redux, Node, Express, MySQL, CSS, HTML,
@@ -355,7 +366,7 @@ class IndexPage extends Component {
                 </a>
               </h3>
               <p className="small-description">
-                - Compares Yelp search results with Google Maps
+                {` - Compares Yelp search results with Google Maps`}
               </p>
               <p>JavaScript, React, Node, Express, CSS, HTML</p>
               <p className="description">

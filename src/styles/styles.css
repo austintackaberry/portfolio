@@ -225,5 +225,6 @@ h3 > a,
 h3 > a:visited,
 p > a,
 p > a:visited {
-  color: rgb(42, 85, 179);
+  color: rgb(56, 95, 179);
+  text-decoration: none;
 }
