@@ -11,6 +11,8 @@ import professionalPicSrc from '../images/pic-square.jpg'
 
 import '../styles/reset.css'
 import 'github-calendar/dist/github-calendar.css'
+import '@fortawesome/fontawesome-free/css/all.css'
+// import '@fortawesome/fontawesome-free/js/all.min.js'
 import '../styles/styles.css'
 
 /* eslint-disable jsx-a11y/anchor-has-content */
