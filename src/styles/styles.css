@@ -55,6 +55,7 @@ body {
   padding-left: 3vmin;
   border-radius: 2vmin;
   background: rgb(31, 31, 31);
+  width: 100%;
 }
 
 .subitem {
