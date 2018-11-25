@@ -157,7 +157,9 @@ class IndexPage extends Component {
             <h2>Work Experience</h2>
             <div className="subitem">
               <h3>Software Engineer - Human API</h3>
-              <p>JavaScript, React, Nodejs, Sass, Hapijs, Mongo, Scrum</p>
+              <p>
+                JavaScript, React, Nodejs, Sass, Hapijs, Mongo, Cypress, Scrum
+              </p>
               <ul>
                 <li>
                   Head maintainer for company's main consumer-facing web
