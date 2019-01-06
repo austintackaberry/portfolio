@@ -140,16 +140,16 @@ class IndexPage extends Component {
           <div className="item">
             <h2>Languages</h2>
             <div className="subitem" style={{ paddingBottom: '0px' }}>
-              <p>JavaScript, Python, Nodejs</p>
+              <p>JavaScript, Python, Nodejs, TypeScript</p>
             </div>
           </div>
           <div className="item">
             <h2>Technologies</h2>
             <div className="subitem" style={{ paddingBottom: '0px' }}>
               <p>
-                React, Redux, Express, Sass, CSS, HTML, Git, Jest, MySQL, Mocha,
-                Chai, Enzyme, Cypress, ESLint, Prettier, Linux/Unix, D3, Flask,
-                MongoDB, AWS
+                React, Redux, Express, Sass, CSS, HTML, Git, Jest, Mocha, Chai,
+                Enzyme, Cypress, ESLint, Prettier, Linux/Unix, D3, Flask,
+                MongoDB, MySQL, PostgreSQL
               </p>
             </div>
           </div>
