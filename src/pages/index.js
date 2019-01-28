@@ -360,11 +360,11 @@ class IndexPage extends Component {
             <div className="subitem">
               <h3>
                 <a
-                  href="https://www.yeggle.tech"
+                  href="https://yeggle.herokuapp.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Yeggle.Tech
+                  Yeggle
                 </a>
               </h3>
               <p className="small-description">
